@@ -9,6 +9,7 @@ int main() {
 
 	cout << "Ingrese el tamanio de la columna: ";
 	cin >> tam1;
+	// hkahnisdof
 	cout << "Ingrese el tamanio de la fila: ";
 	cin >> tam2;
 	cout << "De cuantos turnos sera la partida: ";
