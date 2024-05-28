@@ -1,8 +1,5 @@
 #pragma once
-#include<iostream>
-#include<sstream>
-#include<vector>
-#include"ComponenteTablero.h"
+#include"Apoyo.h"
 using namespace std;
 
 class Jugada
@@ -21,5 +18,5 @@ class Jugada
 		string toString();
 		bool jugada1(int t1, int t2);
 		bool jugada2(int t1, int t2);
-		bool verificandoPuntos();
+		void verificandoPuntos();
 };

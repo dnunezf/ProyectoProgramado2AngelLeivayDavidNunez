@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Apoyo.h" />
     <ClInclude Include="ComponenteTablero.h" />
     <ClInclude Include="Espacio.h" />
     <ClInclude Include="JugadaJugador1.h" />
@@ -26,7 +27,6 @@
     <ClInclude Include="Jugada.h" />
     <ClInclude Include="LineaHorizontal.h" />
     <ClInclude Include="LineaVertical.h" />
-    <ClInclude Include="Matriz.h" />
     <ClInclude Include="Punto.h" />
     <ClInclude Include="PuntoJugador1.h" />
     <ClInclude Include="PuntoJugador2.h" />
@@ -38,7 +38,7 @@
     <ClCompile Include="JugadaJugador2.cpp" />
     <ClCompile Include="LineaHorizontal.cpp" />
     <ClCompile Include="LineaVertical.cpp" />
-    <ClCompile Include="Principal.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Punto.cpp" />
     <ClCompile Include="PuntoJugador1.cpp" />
     <ClCompile Include="PuntoJugador2.cpp" />
