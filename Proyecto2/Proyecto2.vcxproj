@@ -19,10 +19,29 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ComponenteTablero.h" />
+    <ClInclude Include="Espacio.h" />
+    <ClInclude Include="JugadaJugador1.h" />
+    <ClInclude Include="JugadaJugador2.h" />
+    <ClInclude Include="Jugada.h" />
+    <ClInclude Include="LineaHorizontal.h" />
+    <ClInclude Include="LineaVertical.h" />
     <ClInclude Include="Matriz.h" />
+    <ClInclude Include="Punto.h" />
+    <ClInclude Include="PuntoJugador1.h" />
+    <ClInclude Include="PuntoJugador2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Espacio.cpp" />
+    <ClCompile Include="Jugada.cpp" />
+    <ClCompile Include="JugadaJugador1.cpp" />
+    <ClCompile Include="JugadaJugador2.cpp" />
+    <ClCompile Include="LineaHorizontal.cpp" />
+    <ClCompile Include="LineaVertical.cpp" />
     <ClCompile Include="Principal.cpp" />
+    <ClCompile Include="Punto.cpp" />
+    <ClCompile Include="PuntoJugador1.cpp" />
+    <ClCompile Include="PuntoJugador2.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
