@@ -33,8 +33,8 @@ public:
 			s << " No." << i << endl
 				<< " El punto de chequeo es: "
 				<< vec[i]->getEstado()->getPuntoChequeo() << endl
-				<< " El numero aleatorio es: "
-				<< vec[i]->getEstado()->getNumeroAleatorio() << endl;
+				<< " La jugado fue: "
+				<< vec[i]->getEstado()->toString() << endl;
 		}
 		return s.str();
 	}
