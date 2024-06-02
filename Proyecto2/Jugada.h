@@ -11,6 +11,7 @@ class Jugada
 		int can;
 		int puntosJugador1;
 		int puntosJugador2;
+		int puntoChequeo;
 
 	public:
 		Jugada(int t1, int t2);
@@ -19,4 +20,6 @@ class Jugada
 		bool jugada1(int t1, int t2);
 		bool jugada2(int t1, int t2);
 		void verificandoPuntos();
+		int getPuntoChequeo();
+		void setPuntoChequeo(int);
 };

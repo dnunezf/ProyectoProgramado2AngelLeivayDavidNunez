@@ -27,9 +27,12 @@
     <ClInclude Include="Jugada.h" />
     <ClInclude Include="LineaHorizontal.h" />
     <ClInclude Include="LineaVertical.h" />
+    <ClInclude Include="Memento.h" />
+    <ClInclude Include="Originador.h" />
     <ClInclude Include="Punto.h" />
     <ClInclude Include="PuntoJugador1.h" />
     <ClInclude Include="PuntoJugador2.h" />
+    <ClInclude Include="RepositorioMemento.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Espacio.cpp" />

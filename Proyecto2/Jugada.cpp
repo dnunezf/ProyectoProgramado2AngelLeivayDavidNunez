@@ -1,7 +1,7 @@
 #include "Jugada.h"
 #include"Apoyo.h"
 
-Jugada::Jugada(int t1, int t2) : tam1(t1), tam2(t2), can(0), puntosJugador1(0), puntosJugador2(0) 
+Jugada::Jugada(int t1, int t2) : tam1(t1), tam2(t2), can(0), puntosJugador1(0), puntosJugador2(0), puntoChequeo(0)
 {
     tablero.resize(tam1, vector<ComponenteTablero*>(tam2, nullptr));
 
@@ -156,4 +156,14 @@ void Jugada::verificandoPuntos()
             }
         }
     }
+}
+
+int Jugada::getPuntoChequeo()
+{
+    return puntoChequeo;
+}
+
+void Jugada::setPuntoChequeo(int pto)
+{
+    puntoChequeo = pto;
 }
