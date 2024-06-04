@@ -16,10 +16,13 @@ class Jugada
 	public:
 		Jugada(int t1, int t2);
 		virtual ~Jugada();
+		int getTam1() const;
+		int getTam2() const;
 		string toString();
 		bool jugada1(int t1, int t2);
 		bool jugada2(int t1, int t2);
 		void verificandoPuntos();
 		int getPuntoChequeo();
 		void setPuntoChequeo(int);
+		bool hacerJugada(int t1, int t2, int jugador);
 };

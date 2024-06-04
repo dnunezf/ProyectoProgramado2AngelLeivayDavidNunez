@@ -21,7 +21,9 @@
   <ItemGroup>
     <ClInclude Include="Apoyo.h" />
     <ClInclude Include="ComponenteTablero.h" />
+    <ClInclude Include="ContextoEstrategia.h" />
     <ClInclude Include="Espacio.h" />
+    <ClInclude Include="JuegoAleatorio.h" />
     <ClInclude Include="JugadaJugador1.h" />
     <ClInclude Include="JugadaJugador2.h" />
     <ClInclude Include="Jugada.h" />
@@ -33,9 +35,12 @@
     <ClInclude Include="PuntoJugador1.h" />
     <ClInclude Include="PuntoJugador2.h" />
     <ClInclude Include="RepositorioMemento.h" />
+    <ClInclude Include="Strategy.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ContextoEstrategia.cpp" />
     <ClCompile Include="Espacio.cpp" />
+    <ClCompile Include="JuegoAleatorio.cpp" />
     <ClCompile Include="Jugada.cpp" />
     <ClCompile Include="JugadaJugador1.cpp" />
     <ClCompile Include="JugadaJugador2.cpp" />

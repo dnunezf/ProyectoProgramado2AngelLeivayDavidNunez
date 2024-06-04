@@ -47,6 +47,16 @@ Jugada::~Jugada()
     }
 }
 
+int Jugada::getTam1() const
+{
+    return tam1;
+}
+
+int Jugada::getTam2() const
+{
+    return tam2;
+}
+
 string Jugada::toString()
 {
     stringstream s;
@@ -166,4 +176,23 @@ int Jugada::getPuntoChequeo()
 void Jugada::setPuntoChequeo(int pto)
 {
     puntoChequeo = pto;
+}
+
+bool Jugada::hacerJugada(int t1, int t2, int jugador)
+{
+    if (t1 >= tam1 || t2 >= tam2 || t1 < 0 || t2 < 0) {
+        std::cout << "Casillas no existe" << std::endl;
+        return false;
+    }
+    if (tablero[t1][t2]->toString() == "- " || tablero[t1][t2]->toString() == "|") {
+        delete tablero[t1][t2];
+        if (jugador == 1) {
+            tablero[t1][t2] = new JugadaJugador1();
+        }
+        else {
+            tablero[t1][t2] = new JugadaJugador2();
+        }
+        return true;
+    }
+    return false;
 }
