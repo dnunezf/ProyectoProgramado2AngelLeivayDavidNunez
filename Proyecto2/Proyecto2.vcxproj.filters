@@ -66,6 +66,9 @@
     <ClInclude Include="ContextoEstrategia.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="JuegoCercano.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -102,6 +105,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ContextoEstrategia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JuegoCercano.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

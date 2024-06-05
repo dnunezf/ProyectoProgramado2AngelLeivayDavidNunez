@@ -1,6 +1,7 @@
 #include"Jugada.h"
 #include "ContextoEstrategia.h"
 #include "JuegoAleatorio.h"
+#include"JuegoCercano.h"
 
 int main() 
 {
@@ -21,19 +22,24 @@ int main()
 
     Jugada* matriz = new Jugada(tam1 * 2 + 1, tam2 * 2 + 1);
     ContextoEstrategia* contexto = nullptr;
+    JuegoCercano* juegoCercano = nullptr;
 
     cout << "Seleccione el modo de juego:\n1. Jugador vs Jugador\n2. Jugador vs Maquina" << std::endl;
     cin >> modoJuego;
 
     if (modoJuego == 2) 
     {
-        cout << "Seleccione la estrategia de la maquina:\n1. Estrategia Aleatoria" << endl;
+        cout << "Seleccione la estrategia de la maquina:\n1. Estrategia Aleatoria\n2. Estrategia Juego Cercano" << endl;
         cin >> estrategiaSeleccionada;
 
         switch (estrategiaSeleccionada) 
         {
             case 1:
                 contexto = new ContextoEstrategia(new JuegoAleatorio());
+                break;
+
+            case 2:
+                contexto = new ContextoEstrategia(new JuegoCercano());
                 break;
 
             default:
