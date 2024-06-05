@@ -5,7 +5,7 @@ using namespace std;
 class Jugada
 {
 	private:
-		vector<vector<ComponenteTablero*>> tablero;
+		ComponenteTablero*** tablero; 
 		int tam1;
 		int tam2;
 		int can;

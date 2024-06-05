@@ -3,13 +3,17 @@
 
 Jugada::Jugada(int t1, int t2) : tam1(t1), tam2(t2), can(0), puntosJugador1(0), puntosJugador2(0), puntoChequeo(0)
 {
-    tablero.resize(tam1, vector<ComponenteTablero*>(tam2, nullptr));
+    // Crear arreglo dinámico de punteros
+    tablero = new ComponenteTablero * *[tam1];
 
-    for (int i = 0; i < tam1; ++i) 
+    for (int i = 0; i < tam1; ++i)
     {
-        for (int j = 0; j < tam2; ++j) 
+        tablero[i] = new ComponenteTablero * [tam2];
+        for (int j = 0; j < tam2; ++j)
         {
-            if (i % 2 == 0) 
+            tablero[i][j] = nullptr; // Inicializar a nullptr
+
+            if (i % 2 == 0)
             {
                 if (j % 2 == 0)
                 {
@@ -20,17 +24,16 @@ Jugada::Jugada(int t1, int t2) : tam1(t1), tam2(t2), can(0), puntosJugador1(0), 
                     tablero[i][j] = new LineaHorizontal();
                 }
             }
-            else 
+            else
             {
                 if (j % 2 == 0)
                 {
                     tablero[i][j] = new LineaVertical();
                 }
-                    
                 else
                 {
                     tablero[i][j] = new Espacio();
-                }   
+                }
             }
         }
     }
@@ -38,14 +41,17 @@ Jugada::Jugada(int t1, int t2) : tam1(t1), tam2(t2), can(0), puntosJugador1(0), 
 
 Jugada::~Jugada()
 {
-    for (int i = 0; i < tam1; ++i) 
+    for (int i = 0; i < tam1; ++i)
     {
-        for (int j = 0; j < tam2; ++j) 
+        for (int j = 0; j < tam2; ++j)
         {
             delete tablero[i][j];
         }
+        delete[] tablero[i]; 
     }
+    delete[] tablero; 
 }
+
 
 int Jugada::getTam1() const
 {
@@ -181,7 +187,7 @@ void Jugada::setPuntoChequeo(int pto)
 bool Jugada::hacerJugada(int t1, int t2, int jugador)
 {
     if (t1 >= tam1 || t2 >= tam2 || t1 < 0 || t2 < 0) {
-        std::cout << "Casillas no existe" << std::endl;
+        cout << "Casillas no existe" << endl;
         return false;
     }
     if (tablero[t1][t2]->toString() == "- " || tablero[t1][t2]->toString() == "|") {
