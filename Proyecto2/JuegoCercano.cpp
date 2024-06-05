@@ -46,8 +46,8 @@ void JuegoCercano::placeLine(Jugada& jugada, int jugador)
     // Si no se pudo jugar cerca del último movimiento, jugar aleatoriamente
     do 
     {
-        t1 = std::rand() % jugada.getTam1();
-        t2 = std::rand() % jugada.getTam2();
+        t1 = rand() % jugada.getTam1();
+        t2 = rand() % jugada.getTam2();
 
         success = jugada.hacerJugada(t1, t2, jugador);
     } while (!success);
