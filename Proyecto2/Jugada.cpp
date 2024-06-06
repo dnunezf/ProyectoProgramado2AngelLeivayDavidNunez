@@ -202,3 +202,20 @@ bool Jugada::hacerJugada(int t1, int t2, int jugador)
     }
     return false;
 }
+
+bool Jugada::esCuadroCompleto(int t1, int t2)
+{
+    if (t1 <= 0 || t1 >= tam1 - 1 || t2 <= 0 || t2 >= tam2 - 1) 
+    {
+        return false;
+    }
+
+    int ladoCompleto = 0;
+
+    if (tablero[t1 - 1][t2]->toString() != "|") ladoCompleto++;
+    if (tablero[t1 + 1][t2]->toString() != "|") ladoCompleto++;
+    if (tablero[t1][t2 - 1]->toString() != "- ") ladoCompleto++;
+    if (tablero[t1][t2 + 1]->toString() != "- ") ladoCompleto++;
+
+    return ladoCompleto < 4;
+}

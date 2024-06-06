@@ -1,6 +1,4 @@
 #include "JuegoCentral.h"
-#include <cstdlib>
-#include <cmath>
 
 void JuegoCentral::placeLine(Jugada& jugada, int jugador)
 {

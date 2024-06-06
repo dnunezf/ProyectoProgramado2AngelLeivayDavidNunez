@@ -10,5 +10,4 @@ class JuegoCercano : public Strategy
     public:
         JuegoCercano();
         void placeLine(Jugada&, int);
-        void setLastMove(int, int);
 };

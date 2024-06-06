@@ -1,7 +1,6 @@
 #pragma once
 #include "JuegoCercano.h"
 
-
 JuegoCercano::JuegoCercano() : lastT1(-1), lastT2(-1)
 {
 }

@@ -1,8 +1,8 @@
 #pragma once
-#include "Strategy.h"
+#include"Strategy.h"
 #include <cstdlib>
 
-class JuegoPeriferico : public Strategy 
+class JuegoIslas : public Strategy 
 {
     public:
         void placeLine(Jugada&, int);

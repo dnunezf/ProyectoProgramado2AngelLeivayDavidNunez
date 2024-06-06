@@ -1,5 +1,4 @@
 #include "JuegoPeriferico.h"
-#include <cstdlib>
 
 void JuegoPeriferico::placeLine(Jugada& jugada, int jugador) 
 {

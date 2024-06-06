@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Apoyo.h" />
+    <ClInclude Include="JuegoIslas.h" />
     <ClInclude Include="JuegoCentral.h" />
     <ClInclude Include="JuegoCercano.h" />
     <ClInclude Include="ComponenteTablero.h" />
@@ -46,6 +47,7 @@
     <ClCompile Include="ContextoEstrategia.cpp" />
     <ClCompile Include="Espacio.cpp" />
     <ClCompile Include="JuegoAleatorio.cpp" />
+    <ClCompile Include="JuegoIslas.cpp" />
     <ClCompile Include="JuegoPeriferico.cpp" />
     <ClCompile Include="Jugada.cpp" />
     <ClCompile Include="JugadaJugador1.cpp" />

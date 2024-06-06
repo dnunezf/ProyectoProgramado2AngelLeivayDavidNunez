@@ -25,4 +25,5 @@ class Jugada
 		int getPuntoChequeo();
 		void setPuntoChequeo(int);
 		bool hacerJugada(int t1, int t2, int jugador);
+		bool esCuadroCompleto(int t1, int t2);
 };
