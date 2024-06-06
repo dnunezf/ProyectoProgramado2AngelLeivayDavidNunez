@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Apoyo.h" />
+    <ClInclude Include="JuegoCentral.h" />
     <ClInclude Include="JuegoCercano.h" />
     <ClInclude Include="ComponenteTablero.h" />
     <ClInclude Include="ContextoEstrategia.h" />
@@ -40,6 +41,7 @@
     <ClInclude Include="Strategy.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="JuegoCentral.cpp" />
     <ClCompile Include="JuegoCercano.cpp" />
     <ClCompile Include="ContextoEstrategia.cpp" />
     <ClCompile Include="Espacio.cpp" />

@@ -3,6 +3,7 @@
 #include "JuegoAleatorio.h"
 #include"JuegoCercano.h"
 #include"JuegoPeriferico.h"
+#include"JuegoCentral.h"
 
 int main() 
 {
@@ -25,6 +26,7 @@ int main()
     ContextoEstrategia* contexto = nullptr;
     JuegoCercano* juegoCercano = nullptr;
     JuegoPeriferico* juegoPeriferico = nullptr;
+    JuegoCentral* juegoCentral = nullptr;
 
     cout << "Seleccione el modo de juego:\n1. Jugador vs Jugador\n2. Jugador vs Maquina" << std::endl;
     cin >> modoJuego;
@@ -35,6 +37,7 @@ int main()
         cout << "\n1. Juego Aleatorio" << endl;
         cout << "2. Juego Cercano" << endl;
         cout << "3. Juego Periferico" << endl;
+        cout << "4. Juego Central" << endl;
         cin >> estrategiaSeleccionada;
 
         switch (estrategiaSeleccionada) 
@@ -49,6 +52,10 @@ int main()
 
             case 3:
                 contexto = new ContextoEstrategia(new JuegoPeriferico());
+                break;
+
+            case 4:
+                contexto = new ContextoEstrategia(new JuegoCentral());
                 break;
 
             default:
