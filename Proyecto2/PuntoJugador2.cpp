@@ -2,5 +2,5 @@
 
 string PuntoJugador2::toString() const
 {
-    return "2";
+    return "B";
 }
