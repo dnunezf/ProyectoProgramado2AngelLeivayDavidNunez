@@ -44,9 +44,9 @@ int main()
     cin >> opcion;
     switch (opcion)
     {
-    case 1: tam1 = 3; tam2 = 3; break;
-    case 2: tam1 = 5; tam2 = 5; break;
-    case 3: tam1 = 8; tam2 = 8; break;
+    case 1: tam1 = 3; tam2 = 3; can = 23; break;
+    case 2: tam1 = 5; tam2 = 5; can = 23; break;
+    case 3: tam1 = 8; tam2 = 8; can = 23; break;
     case 4:
         cout << "------AJUSTES DE PARTIDA------" << endl;
         cout << "Ingrese el tamanio de la columna: ";
