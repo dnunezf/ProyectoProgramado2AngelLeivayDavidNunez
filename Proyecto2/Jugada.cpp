@@ -77,23 +77,28 @@ string Jugada::toString()
 {
     stringstream s;
 
-    s << "  ";
+    // Espacio inicial para la primera columna de numeros de fila
+    s << "   ";
+
+    //Imprime los numeros de las columnas, alineados. Se utiliza el setw(2) para asegurarse que cada numero tenga un espacio fijo
+    //respecto a la columna
     for (int aux = 1; aux <= tam2; aux++)
     {
-        s << aux << " ";
+        s << " " << setw(2) << aux << " ";
     }
-        
     s << endl;
 
-    for (int i = 0; i < tam1; i++) 
+    for (int i = 0; i < tam1; i++)
     {
-        s << i + 1 << " ";
+        //Imprime los numeros de las filas, alineados. Se utiliza el setw(2) para asegurarse que cada numero tenga un espacio fijo
+        //respecto a la fila
+        s << setw(2) << i + 1 << " ";
 
-        for (int j = 0; j < tam2; j++) 
+        // Imprimir celdas del tablero, se utiliza el setw(2) para asegurar la adecuada alineacion del tablero.
+        for (int j = 0; j < tam2; j++)
         {
-            s << tablero[i][j]->toString() << " ";
+            s << " " << setw(2) << tablero[i][j]->toString() << " ";
         }
-
         s << endl;
     }
     return s.str();

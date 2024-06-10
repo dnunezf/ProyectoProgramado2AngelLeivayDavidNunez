@@ -10,6 +10,7 @@
 
 #pragma once
 #include"Apoyo.h"
+#include<iomanip>
 using namespace std;
 
 class Jugada
