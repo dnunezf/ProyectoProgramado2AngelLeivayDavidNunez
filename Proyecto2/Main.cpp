@@ -6,7 +6,7 @@
 * version 1.0.0 2024-06-01 |
 * |
 * -------------------------------------------------------------------+
-*/
+*/ 
 
 #include"Jugada.h"
 #include "ContextoEstrategia.h"
@@ -16,22 +16,47 @@
 #include"JuegoCentral.h"
 #include"JuegoIslas.h"
 
+
 int main() 
 {
+    int opcion = 0;
     int jugadas = 0;
-    int can;
-    int tam1, tam2;
+    int can = 0;
+    int tam1 = 0, tam2 = 0;
     bool funciona;
     int modoJuego;
     int estrategiaSeleccionada;
 
-    cout << "------AJUSTES DE PARTIDA------" << endl;
+    /*cout << "------AJUSTES DE PARTIDA------" << endl;
     cout << "Ingrese el tamanio de la columna: ";
     cin >> tam1;
     cout << "Ingrese el tamanio de la fila: ";
     cin >> tam2;
     cout << "De cuantos turnos sera la partida: ";
-    cin >> can;
+    cin >> can;*/
+    cout << "------AJUSTE DE PARTIDA------" << endl;
+    cout << "Escoger el tamaño del tablero: " << endl;
+    cout << "   1- Tamaño de 3x3   " << endl;
+    cout << "   2- Tamaño de 5x5   " << endl;
+    cout << "   3- Tamaño de 8x8   " << endl;
+    cout << "   4- Tamaño Personalizado " << endl;
+    cout << " Ingrese opcion: " << endl;
+    cin >> opcion;
+    switch (opcion)
+    {
+    case 1: tam1 = 3; tam2 = 3; break;
+    case 2: tam1 = 5; tam2 = 5; break;
+    case 3: tam1 = 8; tam2 = 8; break;
+    case 4:
+        cout << "------AJUSTES DE PARTIDA------" << endl;
+        cout << "Ingrese el tamanio de la columna: ";
+        cin >> tam1;
+        cout << "Ingrese el tamanio de la fila: ";
+        cin >> tam2;
+        break;
+    default:
+        break;
+    }
 
     Jugada* matriz = new Jugada(tam1 * 2 + 1, tam2 * 2 + 1);
     ContextoEstrategia* contexto = nullptr;
