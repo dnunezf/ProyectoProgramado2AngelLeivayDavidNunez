@@ -16,6 +16,7 @@
 #include "JuegoPeriferico.h"
 #include "JuegoCentral.h"
 #include "JuegoIslas.h"
+#include"ExcepcionMenu.h"
 
 class MenuJuego
 {

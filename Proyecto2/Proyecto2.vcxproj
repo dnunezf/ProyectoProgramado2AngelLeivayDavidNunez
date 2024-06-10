@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClInclude Include="Apoyo.h" />
     <ClInclude Include="Controladora.h" />
+    <ClInclude Include="ExcepcionMenu.h" />
     <ClInclude Include="JuegoIslas.h" />
     <ClInclude Include="JuegoCentral.h" />
     <ClInclude Include="JuegoCercano.h" />
@@ -45,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Controladora.cpp" />
+    <ClCompile Include="ExcepcionMenu.cpp" />
     <ClCompile Include="JuegoCentral.cpp" />
     <ClCompile Include="JuegoCercano.cpp" />
     <ClCompile Include="ContextoEstrategia.cpp" />
