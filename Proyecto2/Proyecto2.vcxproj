@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Apoyo.h" />
+    <ClInclude Include="Controladora.h" />
     <ClInclude Include="JuegoIslas.h" />
     <ClInclude Include="JuegoCentral.h" />
     <ClInclude Include="JuegoCercano.h" />
@@ -34,6 +35,7 @@
     <ClInclude Include="LineaHorizontal.h" />
     <ClInclude Include="LineaVertical.h" />
     <ClInclude Include="Memento.h" />
+    <ClInclude Include="MenuJuego.h" />
     <ClInclude Include="Originador.h" />
     <ClInclude Include="Punto.h" />
     <ClInclude Include="PuntoJugador1.h" />
@@ -42,6 +44,7 @@
     <ClInclude Include="Strategy.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Controladora.cpp" />
     <ClCompile Include="JuegoCentral.cpp" />
     <ClCompile Include="JuegoCercano.cpp" />
     <ClCompile Include="ContextoEstrategia.cpp" />
@@ -55,6 +58,7 @@
     <ClCompile Include="LineaHorizontal.cpp" />
     <ClCompile Include="LineaVertical.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MenuJuego.cpp" />
     <ClCompile Include="Punto.cpp" />
     <ClCompile Include="PuntoJugador1.cpp" />
     <ClCompile Include="PuntoJugador2.cpp" />

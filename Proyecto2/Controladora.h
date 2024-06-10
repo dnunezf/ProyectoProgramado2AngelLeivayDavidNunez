@@ -8,14 +8,14 @@
 * -------------------------------------------------------------------+
 */
 
-#include"Controladora.h"
+#pragma once
+#include"MenuJuego.h"
 
-int main()
+class Controladora
 {
-	Controladora controladora;
+	private:
+		MenuJuego menu;
 
-	controladora.ejecutar();
-
-	system("pause");
-	return 0;
-}
+	public:
+		void ejecutar();
+};

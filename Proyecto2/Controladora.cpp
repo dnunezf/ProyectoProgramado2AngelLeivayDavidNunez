@@ -8,14 +8,12 @@
 * -------------------------------------------------------------------+
 */
 
-#include"Controladora.h"
+#include "Controladora.h"
 
-int main()
+void Controladora::ejecutar()
 {
-	Controladora controladora;
-
-	controladora.ejecutar();
-
-	system("pause");
-	return 0;
+	while (true)
+	{
+		menu.mostrarMenu();
+	}
 }

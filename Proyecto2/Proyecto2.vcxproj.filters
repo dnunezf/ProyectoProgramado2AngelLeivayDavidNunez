@@ -78,6 +78,12 @@
     <ClInclude Include="JuegoIslas.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MenuJuego.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controladora.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -126,6 +132,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="JuegoIslas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuJuego.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controladora.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

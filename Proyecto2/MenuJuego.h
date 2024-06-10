@@ -8,14 +8,17 @@
 * -------------------------------------------------------------------+
 */
 
-#include"Controladora.h"
+#pragma once
+#include "Jugada.h"
+#include "ContextoEstrategia.h"
+#include "JuegoAleatorio.h"
+#include "JuegoCercano.h"
+#include "JuegoPeriferico.h"
+#include "JuegoCentral.h"
+#include "JuegoIslas.h"
 
-int main()
+class MenuJuego
 {
-	Controladora controladora;
-
-	controladora.ejecutar();
-
-	system("pause");
-	return 0;
-}
+	public:
+		void mostrarMenu();
+};
