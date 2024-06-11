@@ -9,9 +9,16 @@
 */
 
 #include "MenuJuego.h"
+#include"RepositorioMemento.h"
+#include"Originador.h"
 
 void MenuJuego::mostrarMenu()
 {
+    //Memento
+    int con = 0;
+    RepositorioMementos* RP = new RepositorioMementos();
+    Originador* OR = new Originador;
+    // Fin-Memento
     int opcion = 0;
     int jugadas = 0;
     int can = 0;
@@ -242,6 +249,8 @@ void MenuJuego::mostrarMenu()
             if (funciona)
             {
                 cout << "\nJUGADA EXITOSA :)" << endl;
+                OR->setEstado(matriz);
+                RP->agregaMemento(OR->retornaMemento());
             }
             else
             {
@@ -275,6 +284,8 @@ void MenuJuego::mostrarMenu()
                 if (funciona)
                 {
                     cout << "\nJUGADA EXITOSA :)" << endl;
+                    OR->setEstado(matriz);
+                    RP->agregaMemento(OR->retornaMemento());
                 }
                 else
                 {
@@ -291,6 +302,43 @@ void MenuJuego::mostrarMenu()
         jugadas++;
 
     } while (jugadas < can);
+
+    int ob = 0;
+
+    do {
+        cout << "Desea revisar jugadas anteriores?" << endl;
+        cout << "[1] = SI" << endl;
+        cout << "[2] = NO" << endl;
+        cout << "Ingrese su respuesta" << endl;
+        cin >> ob;
+        if (ob == 2) {
+            int po = 0;
+            cout << "Ingrese la el numero de la jugada que quiere revisar" << endl;
+            cin >> po;
+            RP->toStringINPo(po);
+            system("pause");
+            system("cls");
+        }
+    } while (ob != 2);
+    system("cls");
+    cout << "Contando Puntos" << endl;
+    int p1, p2;
+    p1 = matriz->getPuntosJugador1();
+    p2 = matriz->getPuntosJugador2();
+    system("pause");
+    system("cls");
+    cout << "El ganador Fue" << endl;
+    system("pause");
+    system("cls");
+    cout << "Ganador: ";
+    if (p1 < p2)
+        cout << "Jugador 2" << endl;
+    else if (p1 > p2)
+        cout << "Jugador 1" << endl;
+    else if (p1 == p2)
+        cout << "Ambos, jugadores quedaron empatados" << endl;
+    cout << "Terminando Juego" << endl;
+    cout << "Gracias por Jugar" << endl;
 
     delete matriz;
 }

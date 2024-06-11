@@ -234,3 +234,13 @@ bool Jugada::esCuadroCompleto(int t1, int t2)
 
     return ladoCompleto < 4;
 }
+
+int Jugada::getPuntosJugador1()
+{
+    return puntosJugador1;
+}
+
+int Jugada::getPuntosJugador2()
+{
+    return puntosJugador2;
+}

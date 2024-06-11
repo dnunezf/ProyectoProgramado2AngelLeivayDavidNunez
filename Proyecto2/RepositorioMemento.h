@@ -35,6 +35,25 @@ public:
 			return NULL;
 	}
 
+	string toStringINPo(int po) {
+		stringstream s;
+		s << "---------------LISTADO DE MEMENTOS---------------" << endl
+			<< "------------------------------------------------------------" << endl;
+		for (int i = 0; i < can; i++) {
+			if (i == po) {
+				s << " No." << i << endl
+					<< " El punto de chequeo es: "
+					<< vec[i]->getEstado()->getPuntoChequeo() << endl
+					<< " La jugado fue: "
+					<< vec[i]->getEstado()->toString() << endl;
+			}
+			else {
+				s << "La jugada no exite" << endl;
+			}
+		}
+		return s.str();
+	}
+
 	string toString() {
 		stringstream s;
 		s << "---------------LISTADO DE MEMENTOS---------------" << endl
